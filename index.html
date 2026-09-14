@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jamel Eusebio — Full-Stack Developer</title>
+  <meta name="description"
+    content="Portfolio of Jamel Eusebio, passionate Full-Stack Developer specializing in Bug Fixing, Responsive Web Design, and Visual Development.">
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Pacifico&family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,600&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+  <header class="site-header" id="header">
+    <div class="container header-container">
+      <a href="#" class="brand-logo" aria-label="Jamel Eusebio Portfolio">
+        <img src="assets/images/hero-portrait.jpg" alt="Jamel Eusebio" class="brand-avatar">
+        <span class="brand-name">Jamel Eusebio</span>
+      </a>
+
+      <nav class="main-nav" id="mainNav">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#" class="nav-link active">Home</a></li>
+          <li class="nav-item"><a href="#about" class="nav-link">Project</a></li>
+          <li class="nav-item"><a href="#services" class="nav-link">Services</a></li>
+          <li class="nav-item"><a href="#case-studies" class="nav-link">Resume</a></li>
+          <li class="nav-item"><a href="#testimonials" class="nav-link">Testimonial</a></li>
+          <li class="nav-item"><a href="#contact" class="nav-link">About</a></li>
+          <li class="nav-item"><a href="#contact" class="nav-link">Article</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <a href="#contact" class="btn-nav">CONTACT</a>
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation menu">
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <div class="section1">
+      <section class="hero-section" id="hero">
+        <div class="container">
+          <div class="hero-card">
+            <div class="hero-content">
+              <h1 class="hero-title">
+                <span class="hero-wave">👋</span> Hey, I'm Jamel<br>
+                Full-Stack Developer.
+              </h1>
+
+              <p class="hero-desc">
+                Full Stack Frontend Developer and Content Writing Based on L.A. I specialize in Bug Fixing, Responsive
+                Web
+                Design, and Visual Development.
+              </p>
+
+              <div class="hero-cta-group">
+                <a href="#contact" class="btn-hire">
+                  HIRE ME
+                  <svg class="arrow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                    <polyline points="12 5 19 12 12 19"></polyline>
+                  </svg>
+                </a>
+
+                <a href="#case-studies" class="btn-play-intro" id="playVideoBtn">
+                  <span class="intro-line"></span>
+                  <span class="intro-play-icon">▶</span>
+                  <span class="intro-text">Play Intro</span>
+                </a>
+              </div>
+            </div>
+
+            <div class="hero-image-wrapper">
+              <img src="assets/images/hero-portrait2.jpg" alt="Jamel Eusebio - Full-Stack Developer" class="hero-img">
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <section class="brands-section" id="about">
+        <div class="container brands-container">
+          <div class="brands-text">
+            <h2 class="brands-title">I work with over 279+ happy clients all over the world.</h2>
+            <p class="brands-subtitle">
+              Suspendisse eget ultricies felis, in lacinia lectus. Morbi accumsan dapibus tortor, in fermentum odio
+              malesuada in aliquam sed ipsum tristique.
+            </p>
+          </div>
+
+          <div class="brands-grid">
+            <!-- Column 1: Amazon & Dribbble -->
+            <div class="brands-col">
+              <div class="brand-item">
+                <img src="assets/images/logo-amazon.svg" alt="Amazon" class="brand-logo-img logo-amazon">
+              </div>
+              <div class="brand-item">
+                <img src="assets/images/logo-dribbble.svg" alt="Dribbble" class="brand-logo-img logo-dribbble">
+              </div>
+            </div>
+
+            <!-- Column 2: Google & Microsoft (Offset down) -->
+            <div class="brands-col col-offset">
+              <div class="brand-item">
+                <img src="assets/images/logo-google.svg" alt="Google" class="brand-logo-img logo-google">
+              </div>
+              <div class="brand-item">
+                <img src="assets/images/logo-microsoft.svg" alt="Microsoft" class="brand-logo-img logo-microsoft">
+              </div>
+            </div>
+
+            <div class="brands-col">
+              <div class="brand-item">
+                <img src="assets/images/logo-spotify.svg" alt="Spotify" class="brand-logo-img logo-spotify">
+              </div>
+              <div class="brand-item">
+                <img src="assets/images/logo-linkedin.svg" alt="LinkedIn" class="brand-logo-img logo-linkedin">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <section class="case-studies-section" id="case-studies">
+      <div class="container">
+        <div class="section-header case-header">
+          <div class="header-left">
+            <h2 class="section-title">Latest Case Study</h2>
+            <p class="section-subtitle">
+              Morbi risus elit, fringilla in cursus a, molestie non dul. Nunc accumsan gravida risus, ac semper libero
+              mollis ut.
+            </p>
+          </div>
+
+          <div class="slider-controls">
+            <button class="arrow-btn arrow-prev" id="casePrev" aria-label="Previous Project">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+                stroke-linejoin="round">
+                <polyline points="15 18 9 12 15 6"></polyline>
+              </svg>
+            </button>
+            <button class="arrow-btn arrow-next active" id="caseNext" aria-label="Next Project">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+                stroke-linejoin="round">
+                <polyline points="9 18 15 12 9 6"></polyline>
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <div class="case-grid">
+
+          <article class="case-card">
+            <div class="case-image-box">
+              <img src="assets/images/case-holiday.jpg" class="case-img">
+            </div>
+          </article>
+
+          <article class="case-card">
+            <div class="case-image-box">
+              <img src="assets/images/case-nft.jpg" class="case-img">
+            </div>
+          </article>
+
+
+          <article class="case-card">
+            <div class="case-image-box">
+              <img src="assets/images/case-editorial.jpg" class="case-img">
+            </div>
+          </article>
+        </div>
+
+        <div class="slider-dots">
+          <button class="dot-indicator active" aria-label="Slide 1"></button>
+          <button class="dot-indicator" aria-label="Slide 2"></button>
+          <button class="dot-indicator" aria-label="Slide 3"></button>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="services-section" id="services">
+      <div class="container">
+        <div class="section-header text-center">
+          <h2 class="section-title">My Services</h2>
+          <p class="section-subtitle center-sub">
+            Morbi risus elit, fringilla in cursus a, molestie non dui. Nunc accumsan gravida risus, ac semper libero
+            mollis ut.
+          </p>
+        </div>
+
+        <div class="services-grid">
+
+          <div class="service-card">
+            <div class="service-illustration">
+              <img src="assets/images/service-backend.png" class="service-svg">
+            </div>
+            <div class="service-body">
+              <h3 class="service-name">Back-end Development</h3>
+              <p class="service-desc">
+                Vivamus in quam ut felis consectetur imperdiet et sed metus. Nullam tristique scelerisque metus id
+                dignissim.
+              </p>
+              <a href="#contact" class="service-link">
+                Let's Work Together
+                <span class="service-arrow">→</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="service-card">
+            <div class="service-illustration">
+              <img src="assets/images/service-frontend.png" class="service-svg">
+            </div>
+            <div class="service-body">
+              <h3 class="service-name">Front-end Development</h3>
+              <p class="service-desc">
+                Vivamus in quam ut felis consectetur imperdiet et sed metus. Nullam tristique scelerisque metus id
+                dignissim.
+              </p>
+              <a href="#contact" class="service-link">
+                Let's Work Together
+                <span class="service-arrow">→</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="service-card">
+            <div class="service-illustration">
+              <img src="assets/images/service-mockup.svg" class="service-svg">
+            </div>
+            <div class="service-body">
+              <h3 class="service-name">Content Writing</h3>
+              <p class="service-desc">
+                Vivamus in quam ut felis consectetur imperdiet et sed metus. Nullam tristique scelerisque metus id
+                dignissim.
+              </p>
+              <a href="#contact" class="service-link">
+                Let's Work Together
+                <span class="service-arrow">→</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="metrics-section">
+      <div class="container">
+        <div class="metrics-wrapper">
+          <!-- Metric 1 -->
+          <div class="metric-item">
+            <div class="metric-icon-box">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round">
+                <circle cx="12" cy="8" r="6"></circle>
+                <path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"></path>
+              </svg>
+            </div>
+            <div class="metric-num"><span class="counter" data-target="23">23</span>+</div>
+            <div class="metric-label">Years of Experience</div>
+          </div>
+
+          <!-- Metric 2 -->
+          <div class="metric-item">
+            <div class="metric-icon-box">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round">
+                <rect width="20" height="14" x="2" y="7" rx="2" ry="2"></rect>
+                <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+              </svg>
+            </div>
+            <div class="metric-num"><span class="counter" data-target="325">325</span>+</div>
+            <div class="metric-label">Completed Projects</div>
+          </div>
+
+          <!-- Metric 3 -->
+          <div class="metric-item">
+            <div class="metric-icon-box">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round">
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                <circle cx="9" cy="7" r="4"></circle>
+                <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+              </svg>
+            </div>
+            <div class="metric-num"><span class="counter" data-target="279">279</span>+</div>
+            <div class="metric-label">Happy Clients</div>
+          </div>
+
+          <!-- Metric 4 -->
+          <div class="metric-item">
+            <div class="metric-icon-box">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"></circle>
+                <polyline points="12 6 12 12 16 14"></polyline>
+              </svg>
+            </div>
+            <div class="metric-num"><span class="counter" data-target="1652">1652</span>+</div>
+            <div class="metric-label">Hours of Work</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="testimonial-section" id="testimonials">
+      <div class="container">
+        <div class="testimonial-grid">
+          <div class="testimonial-content">
+            <h2 class="section-title">Client Testimonial</h2>
+            <p class="section-subtitle">
+              Great Designer, does great work and is very flexible with change. if you're a programmer and are looking
+              for UI/UX designer is definitely well qualified for the job.
+
+            <div class="testimonial-card">
+              <div class="testimonial-quote-icon">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
+                </svg>
+              </div>
+
+              <blockquote class="testimonial-quote">
+                "Great Designer, does great work and is very flexible with change. if you're a programmer andare looking
+                for UI/UX designer is definitely well qualified for the job."
+              </blockquote>
+            </div>
+
+            <div class="testimonial-footer">
+              <div class="testimonial-author">
+                <img src="assets/images/client-avatar.jpg" alt="Robert Fox" class="author-avatar">
+                <div class="author-meta">
+                  <strong class="author-name">Robert Fox</strong>
+                  <span class="author-role">Founder at TechCorp</span>
+                </div>
+              </div>
+
+              <div class="testimonial-nav">
+                <button class="arrow-btn arrow-prev" id="testiPrev" aria-label="Previous Testimonial">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <polyline points="15 18 9 12 15 6"></polyline>
+                  </svg>
+                </button>
+                <button class="arrow-btn arrow-next active" id="testiNext" aria-label="Next Testimonial">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <polyline points="9 18 15 12 9 6"></polyline>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-media">
+            <div class="testimonial-media-card">
+              <img src="assets/images/testimonial-portrait.jpg" alt="Client Review Video Thumbnail"
+                class="testimonial-media-img">
+              <button class="media-play-btn" aria-label="Watch video testimonial">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <polygon points="9,6 18,12 9,18"></polygon>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-section" id="contact">
+      <div class="container">
+        <div class="cta-card">
+          <div class="cta-content">
+            <h2 class="cta-title">Have a project idea.<br>Let's work together!</h2>
+            <p class="cta-desc">
+              Do you fancy saying hi to me or do you want to get started with your project and you need my help? Feel
+              free to contact me.
+              <a href="mailto:kevin.gilbert.com" class="btn btn-yellow btn-cta">
+                LET'S WORK TOGETHER
+                <svg class="btn-icon" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd"
+                    d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z"
+                    clip-rule="evenodd" />
+                </svg>
+              </a>
+          </div>
+
+          <div class="cta-contacts">
+            <a href="mailto:kevin.gilbert.com" class="contact-pill">
+              <div class="contact-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <rect width="20" height="16" x="2" y="4" rx="2"></rect>
+                  <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+                </svg>
+              </div>
+              <div class="contact-text">
+                <span class="contact-label">EMAIL ME</span>
+                <span class="contact-val">kevin.gilbert.com</span>
+              </div>
+            </a>
+            <a href="tel:+12345678900" class="contact-pill">
+              <div class="contact-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <path
+                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                  </path>
+                </svg>
+              </div>
+              <div class="contact-text">
+                <span class="contact-label">CALL ME</span>
+                <span class="contact-val">+1-202-555555-0190</span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+
+        <div class="footer-brand">
+          <div class="brand-logo">
+            <img src="assets/images/hero-portrait.jpg" alt="Jamel Eusebio" class="brand-avatar">
+            <span class="brand-name">Jamel Eusebio</span>
+          </div>
+          <p class="footer-desc">
+            4517 Ave. Manchester, Kentucky
+          </p>
+          <p class="footer-desc">
+            39495, Los Angeles, California, USA
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <ul class="footer-links">
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Resume</a></li>
+            <li><a href="#case-studies">Article</a></li>
+          </ul>
+        </div>
+
+
+        <div class="footer-col">
+          <ul class="footer-links">
+            <li><a href="#services">Services</a></li>
+            <li><a href="#services">Projects</a></li>
+            <li><a href="#services">Pricing Plans</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+
+        <div class="footer-col">
+          <ul class="footer-links">
+            <li><a href="https://dribbble.com" target="_blank" rel="noopener">Facebook</a></li>
+            <li><a href="https://twitter.com" target="_blank" rel="noopener">Twitter</a></li>
+            <li><a href="https://instagram.com" target="_blank" rel="noopener">Instagram</a></li>
+            <li><a href="https://linkedin.com" target="_blank" rel="noopener">CodePen</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="copyright">All content ©2026-Current Jamel EusebioEusebio and respective copyright holders.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const mobileToggle = document.getElementById('mobileToggle');
+    const mainNav = document.getElementById('mainNav');
+    if (mobileToggle && mainNav) {
+      mobileToggle.addEventListener('click', () => {
+        mobileToggle.classList.toggle('active');
+        mainNav.classList.toggle('active');
+      });
+    }
+  </script>
+
+</body>
+
+</html>
