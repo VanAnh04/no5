@@ -108,7 +108,7 @@ button {
 .section-subtitle {
   font-size: 1.05rem;
   color: var(--color-text-muted);
-  max-width: 580px;
+  max-width: 440px;
   line-height: 1.6;
 }
 
@@ -132,7 +132,7 @@ button {
   gap: 8px;
   font-family: var(--font-main);
   font-weight: 700;
-  border-radius: var(--radius-full);
+  border-radius: 10px;
   padding: 13px 28px;
   font-size: 0.95rem;
   transition: all var(--transition-normal);
@@ -595,7 +595,7 @@ button {
   justify-content: center;
   box-shadow: 0 10px 25px -4px rgba(0, 0, 0, 0.05), 0 4px 10px -2px rgba(0, 0, 0, 0.025);
   transition: all var(--transition-normal);
-  min-height: 68px;
+  min-height: 90px;
 }
 
 .brand-item:hover {
@@ -604,9 +604,9 @@ button {
 }
 
 .brand-logo-img {
-  max-height: 28px;
+  max-height: 35px;
   width: auto;
-  max-width: 105px;
+  max-width: 120px;
   object-fit: contain;
 }
 
@@ -637,7 +637,6 @@ button {
 
 .case-card {
   position: relative;
-  border-radius: var(--radius-lg);
   overflow: hidden;
   background-color: #f8fafc;
   border: 1px solid var(--border-light);
@@ -654,7 +653,7 @@ button {
 .case-image-box {
   position: relative;
   width: 100%;
-  aspect-ratio: 4 / 3.3;
+  aspect-ratio: 4 / 4.6;
   overflow: hidden;
 }
 
@@ -663,6 +662,19 @@ button {
   height: 100%;
   object-fit: cover;
   transition: transform var(--transition-slow);
+}
+
+.case-content {
+  position: absolute;
+  inset: 0;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #ffff;
+  margin-top : 46%;
+}
+.case-content-view {
+  color: var(--color-accent-yellow-hover);
 }
 
 .case-card:hover .case-img {
@@ -722,7 +734,8 @@ button {
 }
 
 .dot-indicator.active {
-  width: 24px;
+  width: 10px;
+  height: 10px;
   background-color: var(--color-green-primary);
 }
 
@@ -757,14 +770,12 @@ button {
 
 .service-illustration {
   width: 100%;
-  height: 180px;
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 24px;
   background-color: #f8fafc;
   border-radius: var(--radius-md);
-  padding: 16px;
   border: 1px solid var(--border-subtle);
   transition: transform var(--transition-normal);
 }
@@ -859,7 +870,6 @@ button {
   width: 48px;
   height: 48px;
   border-radius: var(--radius-full);
-  background-color: var(--color-green-subtle);
   color: var(--color-green-primary);
   display: flex;
   align-items: center;
@@ -901,7 +911,7 @@ button {
 .testimonial-grid {
   display: grid;
   grid-template-columns: 1.15fr 0.85fr;
-  gap: 56px;
+  gap: 120px;
   align-items: center;
 }
 
@@ -923,9 +933,6 @@ button {
 .testimonial-quote-icon {
   width: 40px;
   height: 40px;
-  border-radius: var(--radius-full);
-  background-color: var(--color-green-primary);
-  color: var(--color-accent-yellow);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -960,7 +967,7 @@ button {
 .author-avatar {
   width: 52px;
   height: 52px;
-  border-radius: var(--radius-full);
+  border-radius: 10px;
   object-fit: cover;
   border: 2px solid var(--color-white);
   box-shadow: var(--shadow-sm);
@@ -969,6 +976,12 @@ button {
 .author-meta {
   display: flex;
   flex-direction: column;
+}
+
+.author-namerole {
+  display: flex;
+  align-items: center;
+  gap: 4px;
 }
 
 .author-name {
@@ -980,6 +993,10 @@ button {
 .author-role {
   font-size: 0.88rem;
   color: var(--color-text-muted);
+}
+
+.author-role-green{
+  color: var(--color-green-primary);
 }
 
 .testimonial-media {
@@ -1001,37 +1018,6 @@ button {
   object-fit: cover;
   display: block;
 }
-
-.media-play-btn {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 64px;
-  height: 64px;
-  border-radius: var(--radius-full);
-  background-color: var(--color-accent-yellow);
-  color: #1a1a1a;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
-  transition: all var(--transition-normal);
-  cursor: pointer;
-}
-
-.media-play-btn svg {
-  width: 24px;
-  height: 24px;
-  margin-left: 3px;
-}
-
-.media-play-btn:hover {
-  background-color: var(--color-white);
-  transform: translate(-50%, -50%) scale(1.1);
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
-}
-
 
 .cta-section {
   padding: 30px 0 80px;
@@ -1086,6 +1072,7 @@ button {
 .btn-cta {
   text-transform: uppercase;
   letter-spacing: 0.03em;
+  margin-top: 5%;
 }
 
 .cta-contacts {
@@ -1263,6 +1250,10 @@ button {
     max-width: 100%;
   }
 
+  .case-content {
+    margin-top: 48%;
+  }
+
   .case-grid,
   .services-grid {
     grid-template-columns: repeat(2, 1fr);
@@ -1383,6 +1374,17 @@ button {
     font-size: 1.1rem;
   }
 
+  .case-content {
+    margin-top: 50%;
+  }
+
+  .case-content h3 {
+    font-size: 1rem;
+  }
+
+  .case-content-view {
+    font-size: 0.85rem;
+  }
 
   .case-grid {
     grid-template-columns: 1fr;
@@ -1457,6 +1459,22 @@ button {
 
   .brands-grid {
     grid-template-columns: 1fr;
+  }
+
+  .case-content {
+    margin-top: 45%;
+  }
+
+  .case-content h3 {
+    font-size: 0.9rem;
+  }
+
+  .case-content-view {
+    font-size: 0.75rem;
+  }
+
+  .case-tech {
+    font-size: 0.7rem;
   }
 
   .metrics-wrapper {
