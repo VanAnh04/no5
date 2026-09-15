@@ -12,6 +12,7 @@
 
 <body>
 
+  <input type="checkbox" id="mobileToggle" class="mobile-toggle-checkbox" aria-label="Toggle navigation menu">
 
   <header class="site-header" id="header">
     <div class="container header-container">
@@ -30,15 +31,24 @@
           <li class="nav-item"><a href="#contact" class="nav-link">About</a></li>
           <li class="nav-item"><a href="#contact" class="nav-link">Article</a></li>
         </ul>
+        <div class="mobile-nav-cta">
+          <a href="#contact" class="btn-mobile-contact">CONTACT</a>
+        </div>
       </nav>
+
+      <label for="mobileToggle" class="mobile-toggle mobileToggle" aria-label="Toggle navigation menu">
+        <span class="toggle-bar"></span>
+        <span class="toggle-bar"></span>
+        <span class="toggle-bar"></span>
+      </label>
 
       <div class="header-actions">
         <a href="#contact" class="btn-nav">CONTACT</a>
-        <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation menu">
-        </button>
       </div>
     </div>
   </header>
+
+  <label for="mobileToggle" class="nav-backdrop" aria-hidden="true"></label>
 
   <!-- light/dart -->
   <button id="themeToggle" class="theme-toggle-btn" aria-label="Toggle Light/Dark Theme" title="Light/Dart">
@@ -490,6 +500,22 @@
         document.body.classList.toggle('dark-mode');
         const isDark = document.body.classList.contains('dark-mode');
         localStorage.setItem('theme', isDark ? 'dark' : 'light');
+      });
+    }
+
+    // Đóng mobile menu khi bấm vào link điều hướng hoặc nhấn Escape
+    const mobileToggleCheckbox = document.getElementById('mobileToggle');
+    if (mobileToggleCheckbox) {
+      document.querySelectorAll('.main-nav .nav-link, .btn-mobile-contact').forEach(link => {
+        link.addEventListener('click', () => {
+          mobileToggleCheckbox.checked = false;
+        });
+      });
+
+      window.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && mobileToggleCheckbox.checked) {
+          mobileToggleCheckbox.checked = false;
+        }
       });
     }
   </script>
