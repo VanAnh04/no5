@@ -194,6 +194,7 @@ button {
   background-color: var(--color-white);
   color: var(--color-text-dark);
   transition: all var(--transition-normal);
+  border: 1px solid var(--color-accent-yellow);
 }
 
 .arrow-btn svg {
@@ -974,7 +975,6 @@ button {
   height: 52px;
   border-radius: 10px;
   object-fit: cover;
-  border: 2px solid var(--color-white);
   box-shadow: var(--shadow-sm);
 }
 
@@ -1495,4 +1495,112 @@ button {
   .footer-grid {
     grid-template-columns: 1fr;
   }
+}
+
+.theme-toggle-btn {
+  position: fixed;
+  top: 80%;
+  right: 24px;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background-color: #2563eb;
+  border: 2.5px solid #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 9999;
+  transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1),
+              background-color 0.25s ease,
+              box-shadow 0.25s ease;
+  padding: 0;
+  outline: none;
+}
+
+.theme-toggle-btn:hover {
+  transform: scale(1.08);
+  background-color: #1d4ed8;
+}
+
+.theme-toggle-btn:active {
+  transform: scale(0.92);
+}
+
+.theme-toggle-btn .theme-icon {
+  width: 24px;
+  height: 24px;
+  color: #ffffff;
+  stroke: #ffffff;
+  transition: transform 0.35s ease, opacity 0.25s ease;
+}
+/*dart*/
+body,
+.site-header,
+.section1,
+.services-section,
+.case-section,
+.brands-section,
+.testimonials-section,
+.contact-section,
+.site-footer {
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+body.dark-mode {
+  --color-bg-page: #121314;
+  --color-text-dark: #f8fafc;
+  --color-text-body: #cbd5e1;
+  --color-text-muted: #94a3b8;
+  --border-light: #334155;
+  --color-accent-yellow: #efc745;
+  background-color: #0f172a;
+  color: #cbd5e1;
+}
+
+body.dark-mode .site-header {
+  background-color: var(--color-bg-page);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+
+body.dark-mode .brand-name,
+body.dark-mode .section-title,
+body.dark-mode .brands-title {
+  color: #f8fafc;
+}
+
+body.dark-mode .nav-link {
+  color: #94a3b8;
+}
+
+body.dark-mode .nav-link:hover,
+body.dark-mode .nav-link.active {
+  color: #ffffff;
+}
+
+body.dark-mode .section1 {
+  background: linear-gradient(180deg, #010501 0%, #071609 50%, #092f14 100%);
+}
+
+body.dark-mode .case-studies-section {
+  background-color: var(--color-bg-page);
+}
+
+body.dark-mode .dot-indicator.active {
+  width: 10px;
+  height: 10px;
+  background-color: var(--color-accent-yellow);
+}
+
+body.dark-mode .services-section {
+  background-color: #232628;
+}
+
+body.dark-mode .service-card {
+  background-color: #232628;
+}
+
+body.dark-mode .metrics-section, .metrics-wrapper, .testimonial-section, .cta-section, .site-footer, .arrow-btn{
+  background-color: var(--color-bg-page);
 }
