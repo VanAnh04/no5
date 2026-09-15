@@ -148,7 +148,6 @@ button {
 
 .btn-yellow:hover {
   background-color: var(--color-accent-yellow-hover);
-  transform: translateY(-2px);
   box-shadow: var(--shadow-glow-yellow);
 }
 
@@ -170,10 +169,6 @@ button {
   width: 18px;
   height: 18px;
   transition: transform var(--transition-fast);
-}
-
-.btn:hover .btn-icon {
-  transform: translate(2px, -2px);
 }
 
 .slider-controls,
@@ -204,20 +199,7 @@ button {
 
 .arrow-btn:hover {
   border-color: var(--color-accent-yellow);
-  background-color: var(--color-accent-yellow-light);
-  color: var(--color-text-dark);
-}
-
-.arrow-btn.active {
   background-color: var(--color-accent-yellow);
-  border-color: var(--color-accent-yellow);
-  color: #1a1a1a;
-  box-shadow: 0 4px 12px rgba(243, 191, 50, 0.35);
-}
-
-.arrow-btn.active:hover {
-  background-color: var(--color-accent-yellow-hover);
-  transform: translateY(-1px);
 }
 
 .site-header {
@@ -324,7 +306,6 @@ button {
 
 .btn-nav:hover {
   background-color: var(--color-accent-yellow-hover);
-  transform: translateY(-1px);
 }
 
 #mobileToggle, .mobile-toggle-checkbox {
@@ -492,7 +473,6 @@ button {
 
 .btn-hire:hover {
   background-color: var(--color-accent-yellow-hover);
-  transform: translateY(-2px);
   box-shadow: 0 6px 18px rgba(239, 199, 69, 0.35);
 }
 
@@ -501,10 +481,6 @@ button {
   height: 14px;
   stroke-width: 2.5;
   transition: transform var(--transition-fast);
-}
-
-.btn-hire:hover .arrow-icon {
-  transform: translateX(3px);
 }
 
 .btn-play-intro {
@@ -618,7 +594,6 @@ button {
   background-color: var(--color-white);
   border: 1px solid rgba(0, 0, 0, 0.035);
   border-radius: 14px;
-  padding: 18px 24px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -628,14 +603,10 @@ button {
 }
 
 .brand-item:hover {
-  transform: translateY(-3px);
   box-shadow: 0 14px 30px -4px rgba(0, 0, 0, 0.08);
 }
 
 .brand-logo-img {
-  max-height: 35px;
-  width: auto;
-  max-width: 120px;
   object-fit: contain;
 }
 
@@ -674,9 +645,7 @@ button {
 }
 
 .case-card:hover {
-  transform: translateY(-6px);
   box-shadow: var(--shadow-lg);
-  border-color: #cbd5e1;
 }
 
 .case-image-box {
@@ -707,7 +676,6 @@ button {
 }
 
 .case-card:hover .case-img {
-  transform: scale(1.05);
 }
 
 .case-overlay {
@@ -791,7 +759,6 @@ button {
 }
 
 .service-card:hover {
-  transform: translateY(-6px);
   box-shadow: var(--shadow-md);
   border-color: #cbd5e1;
 }
@@ -804,10 +771,6 @@ button {
   justify-content: center;
   background-color: #f8fafc;
   transition: transform var(--transition-normal);
-}
-
-.service-card:hover .service-illustration {
-  transform: scale(1.02);
 }
 
 .service-svg {
@@ -907,11 +870,6 @@ button {
 .metric-icon-box svg {
   width: 24px;
   height: 24px;
-}
-
-.metric-item:hover .metric-icon-box {
-  transform: scale(1.1);
-  background-color: #d8e8dc;
 }
 
 .metric-num {
