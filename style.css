@@ -933,7 +933,6 @@ button {
   margin: 32px 0 28px;
   position: relative;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.02);
-  border: 1px solid #f6eec3;
 }
 
 .testimonial-quote-icon {
@@ -1603,4 +1602,8 @@ body.dark-mode .service-card {
 
 body.dark-mode .metrics-section, .metrics-wrapper, .testimonial-section, .cta-section, .site-footer, .arrow-btn{
   background-color: var(--color-bg-page);
+}
+
+body.dark-mode .testimonial-card {
+  background-color : #302C16;
 }
