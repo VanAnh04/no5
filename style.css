@@ -664,6 +664,7 @@ button {
 }
 
 .case-card:hover .case-img {
+  /* opacity: 0.5; */
 }
 
 .case-overlay {
@@ -718,9 +719,7 @@ button {
   transition: all var(--transition-normal);
 }
 
-.dot-indicator.active {
-  width: 10px;
-  height: 10px;
+.dot-indicator:hover {
   background-color: var(--color-green-primary);
 }
 
@@ -1439,12 +1438,12 @@ button {
   }
 
   .brands-grid {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 12px;
   }
 
-  .brands-col.col-offset {
-    margin-top: 10px;
+  .col-offset {
+    margin-top: 0px;
   }
 
   .brand-item {
@@ -1453,7 +1452,7 @@ button {
   }
 
   .brand-logo-img {
-    max-height: 22px;
+    max-height: 42px;
   }
 
   .brand-dribbble-text {
@@ -1546,6 +1545,11 @@ button {
   .brands-grid {
     grid-template-columns: 1fr;
   }
+
+  .col-offset {
+  margin-top: 0px;
+}
+
 
   .case-content {
     margin-top: 45%;
