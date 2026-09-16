@@ -591,6 +591,7 @@ button {
 
 .brand-item:hover {
   box-shadow: 0 14px 30px -4px rgba(0, 0, 0, 0.08);
+  cursor: pointer;
 }
 
 .brand-logo-img {
@@ -748,6 +749,7 @@ button {
 .service-card:hover {
   box-shadow: var(--shadow-md);
   border-color: #cbd5e1;
+  cursor: pointer;
 }
 
 .service-illustration {
