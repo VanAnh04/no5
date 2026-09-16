@@ -23,7 +23,7 @@
 
       <nav class="main-nav" id="mainNav">
         <ul class="nav-list">
-          <li class="nav-item"><a href="#" class="nav-link active">Home</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
           <li class="nav-item"><a href="#about" class="nav-link">Project</a></li>
           <li class="nav-item"><a href="#services" class="nav-link">Services</a></li>
           <li class="nav-item"><a href="#case-studies" class="nav-link">Resume</a></li>
@@ -118,34 +118,31 @@
           </div>
 
           <ul class="brands-grid">
-            <!-- Column 1: Amazon & Dribbble -->
-            <li class="brands-col">
-              <div class="brand-item">
-                <img src="assets/images/logo-amazon.png" alt="Amazon" class="brand-logo-img logo-amazon">
-              </div>
-              <div class="brand-item">
-                <img src="assets/images/logo-dribbble.png" alt="Dribbble" class="brand-logo-img logo-dribbble">
-              </div>
+
+            <li class="brand-item">
+              <img src="assets/images/logo-amazon.png" alt="Amazon" class="brand-logo-img logo-amazon">
+            </li>
+            
+            <li class="brand-item col-offset">
+              <img src="assets/images/logo-google.png" alt="Google" class="brand-logo-img logo-google">
             </li>
 
-            <!-- Column 2: Google & Microsoft (Offset down) -->
-            <li class="brands-col col-offset">
-              <div class="brand-item">
-                <img src="assets/images/logo-google.png" alt="Google" class="brand-logo-img logo-google">
-              </div>
-              <div class="brand-item">
-                <img src="assets/images/logo-microsoft.png" alt="Microsoft" class="brand-logo-img logo-microsoft">
-              </div>
+            <li class="brand-item">
+              <img src="assets/images/logo-spotify.png" alt="Spotify" class="brand-logo-img logo-spotify">
             </li>
 
-            <li class="brands-col">
-              <div class="brand-item">
-                <img src="assets/images/logo-spotify.png" alt="Spotify" class="brand-logo-img logo-spotify">
-              </div>
-              <div class="brand-item">
-                <img src="assets/images/logo-linkedin.png" alt="LinkedIn" class="brand-logo-img logo-linkedin">
-              </div>
+            <li class="brand-item">
+              <img src="assets/images/logo-dribbble.png" alt="Dribbble" class="brand-logo-img logo-dribbble">
             </li>
+
+            <li class="brand-item col-offset">
+              <img src="assets/images/logo-microsoft.png" alt="Microsoft" class="brand-logo-img logo-microsoft">
+            </li>
+            
+            <li class="brand-item">
+              <img src="assets/images/logo-linkedin.png" alt="LinkedIn" class="brand-logo-img logo-linkedin">
+            </li>
+
           </ul>
         </div>
       </section>
@@ -234,8 +231,7 @@
                 dignissim.
               </p>
               <a href="#contact" class="service-link">
-                Let's Work Together
-                <span class="service-arrow">→</span>
+                Let's Work Together <img src="assets/images/service-next.png" alt="service-next" class="service-next">
               </a>
             </div>
           </li>
@@ -251,8 +247,7 @@
                 dignissim.
               </p>
               <a href="#contact" class="service-link">
-                Let's Work Together
-                <span class="service-arrow">→</span>
+                Let's Work Together <img src="assets/images/service-next.png" alt="service-next" class="service-next">
               </a>
             </div>
           </li>
@@ -268,8 +263,7 @@
                 dignissim.
               </p>
               <a href="#contact" class="service-link">
-                Let's Work Together
-                <span class="service-arrow">→</span>
+                Let's Work Together <img src="assets/images/service-next.png" alt="service-next" class="service-next">
               </a>
             </div>
           </li>
@@ -283,7 +277,7 @@
           <!-- Metric 1 -->
           <li class="metric-item">
             <div class="metric-icon-box">
-              <img src="assets/images/exp.png" class="metric-exp">
+              <img src="assets/images/exp.png" alt="metric-exp" class="metric-exp">
             </div>
             <div class="metric-num"><span class="counter" data-target="23">23</span>+</div>
             <div class="metric-label">Years of Experience</div>
@@ -292,7 +286,7 @@
           <!-- Metric 2 -->
           <li class="metric-item">
             <div class="metric-icon-box">
-              <img src="assets/images/completeproject.png" class="metric-coplete-project">
+              <img src="assets/images/completeproject.png" alt="metric-complete" class="metric-coplete-project">
             </div>
             <div class="metric-num"><span class="counter" data-target="325">325</span>+</div>
             <div class="metric-label">Completed Projects</div>
@@ -301,7 +295,7 @@
           <!-- Metric 3 -->
           <li class="metric-item">
             <div class="metric-icon-box">
-              <img src="assets/images/happyclient.png" class="metric-happy-client">
+              <img src="assets/images/happyclient.png" alt="metric-client" class="metric-happy-client">
             </div>
             <div class="metric-num"><span class="counter" data-target="279">279</span>+</div>
             <div class="metric-label">Happy Clients</div>
@@ -310,7 +304,7 @@
           <!-- Metric 4 -->
           <li class="metric-item">
             <div class="metric-icon-box">
-              <img src="assets/images/hours.png" class="metric-hours">
+              <img src="assets/images/hours.png" alt="metric-time" class="metric-hours">
             </div>
             <div class="metric-num"><span class="counter" data-target="1652">1652</span>+</div>
             <div class="metric-label">Hours of Work</div>
@@ -472,7 +466,7 @@
       </div>
     </div>
   </footer>
-
+|
   <script>
     //nút chuyển đổi light/dart
     const themeToggle = document.getElementById('themeToggle');
