@@ -474,3 +474,18 @@
 </body>
 
 </html>
+
+const mobileToggleCheckbox = document.getElementById('mobileToggle');
+    if (mobileToggleCheckbox) {
+      document.querySelectorAll('.main-nav .nav-link, .btn-mobile-contact').forEach(link => {
+        link.addEventListener('click', () => {
+          mobileToggleCheckbox.checked = false;
+        });
+      });
+
+      window.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && mobileToggleCheckbox.checked) {
+          mobileToggleCheckbox.checked = false;
+        }
+      });
+    }
