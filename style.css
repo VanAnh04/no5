@@ -562,7 +562,7 @@ button {
   align-items: start;
 }
 
-.col-offset {
+.brand-item:nth-child(3n+2) {
   margin-top: 20px;
 }
 
@@ -1495,7 +1495,7 @@ button {
     gap: 12px;
   }
 
-  .col-offset {
+  .brand-item:nth-child(3n+2) {
     margin-top: 0px;
   }
 
@@ -1608,10 +1608,9 @@ button {
     grid-template-columns: 1fr;
   }
 
-  .col-offset {
-  margin-top: 0px;
-}
-
+  .brand-item:nth-child(3n+2) {
+    margin-top: 0px;
+  }
 
   .case-content {
     margin-top: 45%;
