@@ -571,7 +571,6 @@ button {
   border: 1px solid rgba(0, 0, 0, 0.035);
   border-radius: 8px;
   align-items: center;
-  box-shadow: 0px 16px 48px rgba(19, 34, 56, 0.12);
   transition: all var(--transition-normal);
   min-height: 112px;
   min-width: 200px;
@@ -582,7 +581,7 @@ button {
 }
 
 .brand-item:hover {
-  box-shadow: 0 14px 30px -4px rgba(0, 0, 0, 0.08);
+  box-shadow: 0px 16px 48px rgba(19, 34, 56, 0.12);
   cursor: pointer;
 }
 
